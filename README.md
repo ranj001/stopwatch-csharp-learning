@@ -1,12 +1,12 @@
 # Stopwatch
 
-# Udemy: C# Intermediate: Classes, Interfaces and OOP
+### Udemy: C# Intermediate: Classes, Interfaces and OOP
 
-# Instructor: Hosh Hamedani
+#### Instructor: Hosh Hamedani
 
-# Section 2: CLASSES
+#### Section 2: Classes
 
-# Excercise 1: Design a Stopwatch
+#### Excercise 1: Design a Stopwatch
 
 Design a class called Stopwatch. 
 The job of this class is to simulate a stopwatch. 
