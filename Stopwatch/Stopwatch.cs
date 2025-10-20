@@ -6,34 +6,25 @@ namespace Stopwatch
     {
         private static DateTime _startTime; 
         private static DateTime _stopTime;
-        private static bool _isRunning = false;
+        private static bool _isRunning;
 
         private static void Start()
         {
-            if (!_isRunning)
-            {
-                _startTime = DateTime.Now;
-                _isRunning = true;
-            }
-            else 
-            {
-                string message = "Stopwatch is already running.";
-                throw new InvalidOperationException(message);
-            }
+            if (_isRunning)
+                throw new InvalidOperationException("Stopwatch is already running.");
+
+            _startTime = DateTime.Now;
+            _isRunning = true;
         }
 
         private static TimeSpan Stop()
         {
-            if (_isRunning)
-            {
-                _stopTime = DateTime.Now;
-                _isRunning = false;
-                return _stopTime - _startTime;
-            }
-            else
-            {
+            if (!_isRunning)
                 throw new InvalidOperationException("Stopwatch is not running.");
-            }
+            
+            _stopTime = DateTime.Now;
+            _isRunning = false;
+            return _stopTime - _startTime;
 
         }
 
