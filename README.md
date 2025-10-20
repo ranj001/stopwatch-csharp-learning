@@ -1,4 +1,7 @@
-# Stopwatch
+# Stopwatch (C#/.NET 8)
+This repository contains a simple stopwatch application implemented in C# using .NET 8. It is designed for educational purposes, serving as a practical step to learn about classes and the association of classes in object-oriented programming. The project demonstrates fundamental concepts such as encapsulation, static members, and exception handling, making it ideal for beginners exploring C# class design and interaction.
+
+# Stopwatch Exercise
 
 ### Udemy: C# Intermediate: Classes, Interfaces and OOP
 
@@ -20,3 +23,6 @@ So we may start and stop it and then start and stop it again.
 Make sure the duration value each time is calculated properly. 
 We should not be able to start a stopwatch twice in a row (because that may overwrite the initial start time). 
 So the class should throw an InvalidOperationException if its started twice.
+
+
+
